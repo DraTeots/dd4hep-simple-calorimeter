@@ -1,0 +1,7 @@
+# Incident particle type, energy and direction
+# /gps/source/intensity 1
+/gps/pos/type Point
+/gps/particle mu-
+/gps/ene/mono 4 GeV
+/gps/direction 1. 0. 0.
+/gps/pos/centre -40. 0. 180. mm

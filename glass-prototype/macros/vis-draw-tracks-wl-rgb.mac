@@ -1,0 +1,29 @@
+/vis/scene/add/trajectories rich smooth
+
+/vis/modeling/trajectories/create/drawByAttribute
+
+# /vis/modeling/trajectories/drawByAttribute-0/verbose true
+/vis/modeling/trajectories/drawByAttribute-0/setAttribute FKE
+
+# Spectral colors taken from Wikipedia
+# https://en.wikipedia.org/wiki/Visible_spectrum#Spectral_colors
+
+/vis/modeling/trajectories/drawByAttribute-0/addInterval interval_low    0.0  eV 1.65 eV
+/vis/modeling/trajectories/drawByAttribute-0/addInterval interval_red    1.65 eV 1.98 eV
+/vis/modeling/trajectories/drawByAttribute-0/addInterval interval_orange 1.98 eV 2.10 eV
+/vis/modeling/trajectories/drawByAttribute-0/addInterval interval_yellow 2.10 eV 2.19 eV
+/vis/modeling/trajectories/drawByAttribute-0/addInterval interval_green  2.19 eV 2.48 eV
+/vis/modeling/trajectories/drawByAttribute-0/addInterval interval_cyan   2.48 eV 2.56 eV
+/vis/modeling/trajectories/drawByAttribute-0/addInterval interval_blue   2.56 eV 2.75 eV
+/vis/modeling/trajectories/drawByAttribute-0/addInterval interval_violet 2.75 eV 3.26 eV
+/vis/modeling/trajectories/drawByAttribute-0/addInterval interval_hi     3.26 eV 10 GeV
+
+/vis/modeling/trajectories/drawByAttribute-0/interval_low/setLineColourRGBA    0.5 0.5 0.5 1
+/vis/modeling/trajectories/drawByAttribute-0/interval_red/setLineColourRGBA    1.0 0.0 0.0 1
+/vis/modeling/trajectories/drawByAttribute-0/interval_orange/setLineColourRGBA 1.0 0.5 0.0 1
+/vis/modeling/trajectories/drawByAttribute-0/interval_yellow/setLineColourRGBA 1.0 1.0 0.0 1
+/vis/modeling/trajectories/drawByAttribute-0/interval_green/setLineColourRGBA  0.0 1.0 0.0 1
+/vis/modeling/trajectories/drawByAttribute-0/interval_cyan/setLineColourRGBA   0.0 1.0 1.0 1
+/vis/modeling/trajectories/drawByAttribute-0/interval_blue/setLineColourRGBA   0.0 0.0 1.0 1
+/vis/modeling/trajectories/drawByAttribute-0/interval_violet/setLineColourRGBA 0.5 0.0 1.0 1
+/vis/modeling/trajectories/drawByAttribute-0/interval_hi/setLineColourRGBA     1.0 1.0 1.0 1

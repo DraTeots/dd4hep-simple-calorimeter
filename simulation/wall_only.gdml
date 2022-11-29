@@ -1,0 +1,1555 @@
+<?xml version="1.0"?>
+<gdml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://service-spi.web.cern.ch/service-spi/app/releases/GDML/schema/gdml.xsd">
+  <define>
+    <matrix name="RINDEX__Vacuum" coldim="2" values="1e-09 1
+5.1e-09 1"/>
+    <matrix name="RINDEX__Air" coldim="2" values="1e-09 1.00029
+5.1e-09 1.00029"/>
+    <matrix name="RINDEX__Quartz" coldim="2" values="1e-09 1.46
+5.1e-09 1.46"/>
+    <matrix name="RINDEX__N2" coldim="2" values="1e-09 1.00033
+4e-09 1.00033
+5.1e-09 1.00033"/>
+    <matrix name="RINDEX__Pyrex" coldim="2" values="1e-09 1.5
+4e-09 1.5
+5.1e-09 1.5"/>
+    <matrix name="ABSLENGTH__Pyrex" coldim="2" values="1e-09 10
+4e-09 10
+5.1e-09 10"/>
+    <matrix name="RINDEX__DIRCQuartz" coldim="2" values="1.90745e-09 1.45653
+1.93725e-09 1.45681
+1.968e-09 1.4571
+1.99974e-09 1.4574
+2.03253e-09 1.45771
+2.0664e-09 1.45804
+2.10143e-09 1.45838
+2.13766e-09 1.45873
+2.17516e-09 1.45911
+2.214e-09 1.4595
+2.25426e-09 1.45991
+2.296e-09 1.46034
+2.33932e-09 1.4608
+2.38431e-09 1.46128
+2.43106e-09 1.46179
+2.47968e-09 1.46233
+2.53029e-09 1.4629
+2.583e-09 1.4635
+2.63796e-09 1.46415
+2.69531e-09 1.46483
+2.7552e-09 1.46557
+2.81782e-09 1.46635
+2.88335e-09 1.46719
+2.952e-09 1.46809
+3.024e-09 1.46907
+3.0996e-09 1.47012
+3.17908e-09 1.47125
+3.26274e-09 1.47249
+3.35092e-09 1.47383
+3.44401e-09 1.47529
+3.54241e-09 1.47689
+3.64659e-09 1.47865
+3.7571e-09 1.48059
+3.87451e-09 1.48274
+3.99949e-09 1.48513
+4.13281e-09 1.48779"/>
+    <matrix name="ABSLENGTH__DIRCQuartz" coldim="2" values="1.90745e-09 233615
+1.93725e-09 219567
+1.968e-09 206162
+1.99974e-09 193381
+2.03253e-09 181203
+2.0664e-09 169610
+2.10143e-09 158582
+2.13766e-09 148101
+2.17516e-09 138148
+2.214e-09 128706
+2.25426e-09 119756
+2.296e-09 111281
+2.33932e-09 103264
+2.38431e-09 95688.5
+2.43106e-09 88537.4
+2.47968e-09 81794.9
+2.53029e-09 75445
+2.583e-09 69472.2
+2.63796e-09 63861.3
+2.69531e-09 58597.3
+2.7552e-09 53665.6
+2.81782e-09 49052
+2.88335e-09 44742.5
+2.952e-09 40723.3
+3.024e-09 36981.3
+3.0996e-09 33503.2
+3.17908e-09 30276.4
+3.26274e-09 27288.6
+3.35092e-09 24527.5
+3.44401e-09 21981.4
+3.54241e-09 19639
+3.64659e-09 17488.9
+3.7571e-09 15520.4
+3.87451e-09 13722.9
+3.99949e-09 12086.3
+4.13281e-09 10600.6"/>
+    <matrix name="RINDEX__DIRCEpotek" coldim="2" values="1.90745e-09 1.55403
+1.93725e-09 1.55557
+1.968e-09 1.55698
+1.99974e-09 1.55827
+2.03253e-09 1.55945
+2.0664e-09 1.56056
+2.10143e-09 1.5616
+2.13766e-09 1.5626
+2.17516e-09 1.56358
+2.214e-09 1.56455
+2.25426e-09 1.56553
+2.296e-09 1.56654
+2.33932e-09 1.5676
+2.38431e-09 1.56872
+2.43106e-09 1.56993
+2.47968e-09 1.57125
+2.53029e-09 1.57269
+2.583e-09 1.57427
+2.63796e-09 1.57601
+2.69531e-09 1.57793
+2.7552e-09 1.58005
+2.81782e-09 1.58238
+2.88335e-09 1.58495
+2.952e-09 1.58777
+3.024e-09 1.59086
+3.0996e-09 1.59424
+3.17908e-09 1.59793
+3.26274e-09 1.60195
+3.35092e-09 1.60631
+3.44401e-09 1.61103
+3.54241e-09 1.61614
+3.64659e-09 1.62165
+3.7571e-09 1.62758
+3.87451e-09 1.63395
+3.99949e-09 1.64077
+4.13281e-09 1.64807"/>
+    <matrix name="ABSLENGTH__DIRCEpotek" coldim="2" values="1.90745e-09 233615
+1.93725e-09 219567
+1.968e-09 206162
+1.99974e-09 193381
+2.03253e-09 181203
+2.0664e-09 169610
+2.10143e-09 158582
+2.13766e-09 148101
+2.17516e-09 138148
+2.214e-09 128706
+2.25426e-09 119756
+2.296e-09 111281
+2.33932e-09 103264
+2.38431e-09 95688.5
+2.43106e-09 88537.4
+2.47968e-09 81794.9
+2.53029e-09 75445
+2.583e-09 69472.2
+2.63796e-09 63861.3
+2.69531e-09 58597.3
+2.7552e-09 53665.6
+2.81782e-09 49052
+2.88335e-09 44742.5
+2.952e-09 40723.3
+3.024e-09 36981.3
+3.0996e-09 33503.2
+3.17908e-09 30276.4
+3.26274e-09 27288.6
+3.35092e-09 24527.5
+3.44401e-09 21981.4
+3.54241e-09 19639
+3.64659e-09 17488.9
+3.7571e-09 15520.4
+3.87451e-09 13722.9
+3.99949e-09 12086.3
+4.13281e-09 10600.6"/>
+    <matrix name="RINDEX__DIRCNlak33a" coldim="2" values="1e-09 1.73816
+1.2511e-09 1.73836
+1.26386e-09 1.73858
+1.27687e-09 1.73881
+1.29016e-09 1.73904
+1.30372e-09 1.73928
+1.31758e-09 1.73952
+1.33173e-09 1.73976
+1.34619e-09 1.74001
+1.36097e-09 1.74026
+1.37607e-09 1.74052
+1.39152e-09 1.74078
+1.40731e-09 1.74105
+1.42347e-09 1.74132
+1.44e-09 1.7416
+1.45692e-09 1.74189
+1.47425e-09 1.74218
+1.49199e-09 1.74249
+1.51016e-09 1.74279
+1.52878e-09 1.74311
+1.54787e-09 1.74344
+1.56744e-09 1.74378
+1.58751e-09 1.74412
+1.6081e-09 1.74448
+1.62923e-09 1.74485
+1.65092e-09 1.74522
+1.6732e-09 1.74562
+1.69609e-09 1.74602
+1.71961e-09 1.74644
+1.7438e-09 1.74687
+1.76868e-09 1.74732
+1.79427e-09 1.74779
+1.82062e-09 1.74827
+1.84775e-09 1.74878
+1.87571e-09 1.7493
+1.90452e-09 1.74985
+1.93423e-09 1.75042
+1.96488e-09 1.75101
+1.99652e-09 1.75163
+2.0292e-09 1.75228
+2.06296e-09 1.75296
+2.09787e-09 1.75368
+2.13398e-09 1.75443
+2.17135e-09 1.75521
+2.21006e-09 1.75604
+2.25017e-09 1.75692
+2.29176e-09 1.75784
+2.33492e-09 1.75882
+2.37973e-09 1.75985
+2.42631e-09 1.76095
+2.47473e-09 1.76211
+2.52514e-09 1.76335
+2.57763e-09 1.76467
+2.63236e-09 1.76608
+2.68946e-09 1.76758
+2.7491e-09 1.7692
+2.81143e-09 1.77093
+2.87666e-09 1.77279
+2.94499e-09 1.7748
+3.01665e-09 1.77698
+3.09187e-09 1.77934
+3.17095e-09 1.7819
+3.25418e-09 1.7847
+3.34189e-09 1.78775
+3.43446e-09 1.79111
+3.53231e-09 1.79481
+3.6359e-09 1.79889
+3.74575e-09 1.80343
+3.86244e-09 1.8085
+3.98663e-09 1.81419
+4.11908e-09 1.82061
+4.26062e-09 1.8279
+4.41225e-09 1.83625
+4.57506e-09 1.84589
+4.75035e-09 1.85713
+4.93961e-09 1.87039"/>
+    <matrix name="RINDEX__VM2000" coldim="2" values="1.3776e-09 1.42
+4.13281e-09 1.42"/>
+    <matrix name="ABSLENGTH__DIRCNlak33a" coldim="2" values="1e-09 37181.3
+1.2511e-09 35209.5
+1.26386e-09 33102.1
+1.27687e-09 31081.4
+1.29016e-09 29145.8
+1.30372e-09 27293.7
+1.31758e-09 25523.8
+1.33173e-09 23834.2
+1.34619e-09 22223.4
+1.36097e-09 20689.7
+1.37607e-09 19231.3
+1.39152e-09 17846.3
+1.40731e-09 16533.1
+1.42347e-09 15289.6
+1.44e-09 14114
+1.45692e-09 13004.3
+1.47425e-09 11958.5
+1.49199e-09 10974.7
+1.51016e-09 10050.7
+1.52878e-09 9184.63
+1.54787e-09 8374.31
+1.56744e-09 7617.67
+1.58751e-09 6912.61
+1.6081e-09 6257.02
+1.62923e-09 5648.8
+1.65092e-09 5085.83
+1.6732e-09 4566.01
+1.69609e-09 4087.24
+1.71961e-09 3647.46
+1.7438e-09 3244.58
+1.76868e-09 2876.59
+1.79427e-09 2541.46
+1.82062e-09 2237.22
+1.84775e-09 1961.93
+1.87571e-09 1713.69
+1.90452e-09 1490.65
+1.93423e-09 1291.02
+1.96488e-09 1113.03
+1.99652e-09 955.013
+2.0292e-09 815.33
+2.06296e-09 692.425
+2.09787e-09 584.804
+2.13398e-09 491.046
+2.17135e-09 409.804
+2.21006e-09 339.806
+2.25017e-09 279.854
+2.29176e-09 228.832
+2.33492e-09 185.699
+2.37973e-09 149.492
+2.42631e-09 119.328
+2.47473e-09 94.3973
+2.52514e-09 73.9657
+2.57763e-09 57.3715
+2.63236e-09 44.0228
+2.68946e-09 33.394
+2.7491e-09 25.0229
+2.81143e-09 18.5064
+2.87666e-09 13.4967
+2.94499e-09 9.69664
+3.01665e-09 6.85529
+3.09187e-09 4.76343
+3.17095e-09 3.24882
+3.25418e-09 2.17174
+3.34189e-09 1.42056
+3.43446e-09 0.907612
+3.53231e-09 0.565267
+3.6359e-09 0.34241
+3.74575e-09 0.201226
+3.86244e-09 0.114403
+3.98663e-09 0.062722
+4.11908e-09 0.0330414
+4.26062e-09 0.0166558
+4.41225e-09 0.00799649
+4.57506e-09 0.00363677
+4.75035e-09 0.00155708
+4.93961e-09 0.000623089"/>
+    <matrix name="REFLECTIVITY_mirror" coldim="2" values="1e-09 0.9
+4e-09 0.9
+5.1e-09 0.9"/>
+    <matrix name="RINDEX__Aerogel" coldim="2" values="1e-09 1.03
+4e-09 1.03
+5.1e-09 1.03"/>
+    <matrix name="ABSLENGTH__Aerogel" coldim="2" values="1e-09 4
+4e-09 4
+5.1e-09 4"/>
+    <matrix name="RINDEX__Acrylic" coldim="2" values="1.12727e-09 1.49
+2.06667e-09 1.49
+3.1e-09 1.49"/>
+    <matrix name="ABSLENGTH__Acrylic" coldim="2" values="1.12727e-09 263.1
+1.24e-09 263.1
+1.37778e-09 263.1
+1.55e-09 263.1
+1.77143e-09 250
+2.06667e-09 227.2
+2.48e-09 200
+3.1e-09 131.5
+4.13334e-09 161.3
+4.96e-09 74
+5.51111e-09 12.5
+5.90477e-09 1
+6.2e-09 0"/>
+    <matrix name="RINDEX__C2F6_DRICH" coldim="2" values="1.7712e-09 1.00075
+1.92389e-09 1.00075
+2.10539e-09 1.00075
+2.3247e-09 1.00075
+2.59502e-09 1.00076
+2.93647e-09 1.00076
+3.38139e-09 1.00077
+3.98521e-09 1.00078
+4.85156e-09 1.0008
+6.19921e-09 1.00084"/>
+    <matrix name="ABSLENGTH__C2F6_DRICH" coldim="2" values="1.7712e-09 1000
+1.92389e-09 1000
+2.10539e-09 1000
+2.3247e-09 1000
+2.59502e-09 1000
+2.93647e-09 1000
+3.38139e-09 1000
+3.98521e-09 1000
+4.85156e-09 1000
+6.19921e-09 1000"/>
+    <matrix name="RINDEX__C4F10_PFRICH" coldim="2" values="1.7712e-09 1.0013
+1.92389e-09 1.0013
+2.10539e-09 1.00131
+2.3247e-09 1.00131
+2.59502e-09 1.00132
+2.93647e-09 1.00133
+3.38139e-09 1.00134
+3.98521e-09 1.00136
+4.85156e-09 1.0014
+6.19921e-09 1.00149"/>
+    <matrix name="ABSLENGTH__C4F10_PFRICH" coldim="2" values="1.7712e-09 600
+1.92389e-09 600
+2.10539e-09 600
+2.3247e-09 600
+2.59502e-09 600
+2.93647e-09 600
+3.38139e-09 600
+3.98521e-09 600
+4.85156e-09 600
+6.19921e-09 600"/>
+    <matrix name="RINDEX__Aerogel_DRICH" coldim="2" values="1.87855e-09 1.01852
+1.96673e-09 1.01856
+2.0549e-09 1.01861
+2.14308e-09 1.01866
+2.23126e-09 1.01871
+2.31943e-09 1.01876
+2.40761e-09 1.01881
+2.49579e-09 1.01887
+2.58396e-09 1.01893
+2.67214e-09 1.01899
+2.76032e-09 1.01905
+2.84849e-09 1.01912
+2.93667e-09 1.01919
+3.02485e-09 1.01926
+3.11302e-09 1.01933
+3.2012e-09 1.01941
+3.28938e-09 1.01948
+3.37755e-09 1.01956
+3.46573e-09 1.01965
+3.55391e-09 1.01973
+3.64208e-09 1.01982
+3.73026e-09 1.01991
+3.81844e-09 1.02001
+3.90661e-09 1.0201
+3.99479e-09 1.0202
+4.08297e-09 1.0203
+4.17114e-09 1.02041
+4.25932e-09 1.02052
+4.3475e-09 1.02063
+4.43567e-09 1.02074
+4.52385e-09 1.02086
+4.61203e-09 1.02098
+4.7002e-09 1.02111
+4.78838e-09 1.02123
+4.87656e-09 1.02136
+4.96473e-09 1.0215
+5.05291e-09 1.02164
+5.14109e-09 1.02178
+5.22927e-09 1.02193
+5.31744e-09 1.02208
+5.40562e-09 1.02223
+5.4938e-09 1.02239
+5.58197e-09 1.02255
+5.67015e-09 1.02271
+5.75833e-09 1.02288
+5.8465e-09 1.02306
+5.93468e-09 1.02324
+6.02286e-09 1.02342
+6.11103e-09 1.02361
+6.19921e-09 1.02381"/>
+    <matrix name="ABSLENGTH__Aerogel_DRICH" coldim="2" values="1.87855e-09 14
+1.96673e-09 14.1973
+2.0549e-09 14.3776
+2.14308e-09 14.5431
+2.23126e-09 14.6955
+2.31943e-09 14.8364
+2.40761e-09 14.9669
+2.49579e-09 15.0882
+2.58396e-09 15.2012
+2.67214e-09 15.3067
+2.76032e-09 15.4055
+2.84849e-09 15.4982
+2.93667e-09 15.5854
+3.02485e-09 15.6674
+3.11302e-09 15.7448
+3.2012e-09 15.818
+3.28938e-09 15.8872
+3.37755e-09 15.9528
+3.46573e-09 16.015
+3.55391e-09 16.0742
+3.64208e-09 14.7916
+3.73026e-09 12.8139
+3.81844e-09 11.1378
+3.90661e-09 9.7121
+3.99479e-09 8.4948
+4.08297e-09 7.4518
+4.17114e-09 6.5552
+4.25932e-09 5.7819
+4.3475e-09 5.113
+4.43567e-09 4.5327
+4.52385e-09 4.0278
+4.61203e-09 3.5873
+4.7002e-09 3.2019
+4.78838e-09 2.8641
+4.87656e-09 2.567
+4.96473e-09 2.3054
+5.05291e-09 2.0742
+5.14109e-09 1.8698
+5.22927e-09 1.6884
+5.31744e-09 1.5272
+5.40562e-09 1.3837
+5.4938e-09 1.2557
+5.58197e-09 1.1413
+5.67015e-09 1.0389
+5.75833e-09 0.947
+5.8465e-09 0.8645
+5.93468e-09 0.7902
+6.02286e-09 0.7233
+6.11103e-09 0.6629
+6.19921e-09 0.6082"/>
+    <matrix name="RAYLEIGH__Aerogel_DRICH" coldim="2" values="1.87855e-09 28.1107
+1.96673e-09 23.3984
+2.0549e-09 19.6334
+2.14308e-09 16.5962
+2.23126e-09 14.1242
+2.31943e-09 12.0958
+2.40761e-09 10.4188
+2.49579e-09 9.0226
+2.58396e-09 7.8527
+2.67214e-09 6.8663
+2.76032e-09 6.0301
+2.84849e-09 5.3174
+2.93667e-09 4.707
+3.02485e-09 4.1816
+3.11302e-09 3.7277
+3.2012e-09 3.3336
+3.28938e-09 2.9903
+3.37755e-09 2.69
+3.46573e-09 2.4265
+3.55391e-09 2.1946
+3.64208e-09 1.9896
+3.73026e-09 1.808
+3.81844e-09 1.6468
+3.90661e-09 1.503
+3.99479e-09 1.3746
+4.08297e-09 1.2596
+4.17114e-09 1.1564
+4.25932e-09 1.0637
+4.3475e-09 0.9799
+4.43567e-09 0.9043
+4.52385e-09 0.8358
+4.61203e-09 0.7738
+4.7002e-09 0.7172
+4.78838e-09 0.6659
+4.87656e-09 0.6191
+4.96473e-09 0.5762
+5.05291e-09 0.537
+5.14109e-09 0.5011
+5.22927e-09 0.4681
+5.31744e-09 0.4379
+5.40562e-09 0.41
+5.4938e-09 0.3844
+5.58197e-09 0.3606
+5.67015e-09 0.3386
+5.75833e-09 0.3184
+5.8465e-09 0.2996
+5.93468e-09 0.2822
+6.02286e-09 0.266
+6.11103e-09 0.251
+6.19921e-09 0.237"/>
+    <matrix name="RINDEX__Acrylic_DRICH" coldim="2" values="4.13281e-09 1.5017
+4.22099e-09 1.5017
+4.30916e-09 1.5017
+4.39734e-09 1.5017
+4.48552e-09 1.5017
+4.57369e-09 1.5017
+4.66187e-09 1.5017
+4.75005e-09 1.5017
+4.83822e-09 1.5017
+4.9264e-09 1.5017
+5.01458e-09 1.5017
+5.10275e-09 1.5017
+5.19093e-09 1.5017
+5.27911e-09 1.5017
+5.36728e-09 1.5017
+5.45546e-09 1.5017
+5.54364e-09 1.5017
+5.63181e-09 1.5017
+5.71999e-09 1.5017
+5.80817e-09 1.5017
+5.89634e-09 1.5017
+5.98452e-09 1.5017
+6.0727e-09 1.5017
+6.16087e-09 1.5017
+6.24905e-09 1.5017
+6.33723e-09 1.5017
+6.4254e-09 1.5017
+6.51358e-09 1.5017
+6.60176e-09 1.5017
+6.68993e-09 1.5017
+6.77811e-09 1.5017
+6.86629e-09 1.5017
+6.95446e-09 1.5017
+7.04264e-09 1.5017
+7.13082e-09 1.5017
+7.21899e-09 1.5017
+7.30717e-09 1.5017
+7.39535e-09 1.5017
+7.48353e-09 1.5017
+7.5717e-09 1.5017
+7.65988e-09 1.5017
+7.74806e-09 1.5017
+7.83623e-09 1.5017
+7.92441e-09 1.5017
+8.01259e-09 1.5017
+8.10076e-09 1.5017
+8.18894e-09 1.5017
+8.27712e-09 1.5017
+8.36529e-09 1.5017
+8.45347e-09 1.5017"/>
+    <matrix name="ABSLENGTH__Acrylic_DRICH" coldim="2" values="4.13281e-09 8.20704
+4.22099e-09 3.69138
+4.30916e-09 1.33325
+4.39734e-09 0.503627
+4.48552e-09 0.23393
+4.57369e-09 0.136177
+4.66187e-09 0.0933192
+4.75005e-09 0.0708268
+4.83822e-09 0.0573082
+4.9264e-09 0.0483641
+5.01458e-09 0.0420282
+5.10275e-09 0.0373102
+5.19093e-09 0.033662
+5.27911e-09 0.0307572
+5.36728e-09 0.0283902
+5.45546e-09 0.0264235
+5.54364e-09 0.0247641
+5.63181e-09 0.0233453
+5.71999e-09 0.0221177
+5.80817e-09 0.0210456
+5.89634e-09 0.0201012
+5.98452e-09 0.0192627
+6.0727e-09 0.0185134
+6.16087e-09 0.0178399
+6.24905e-09 0.0172309
+6.33723e-09 0.0166779
+6.4254e-09 0.0166779
+6.51358e-09 0.0166779
+6.60176e-09 0.0166779
+6.68993e-09 0.0166779
+6.77811e-09 0.0166779
+6.86629e-09 0.0166779
+6.95446e-09 0.0166779
+7.04264e-09 0.0166779
+7.13082e-09 0.0166779
+7.21899e-09 0.0166779
+7.30717e-09 0.0166779
+7.39535e-09 0.0166779
+7.48353e-09 0.0166779
+7.5717e-09 0.0166779
+7.65988e-09 0.0166779
+7.74806e-09 0.0166779
+7.83623e-09 0.0166779
+7.92441e-09 0.0166779
+8.01259e-09 0.0166779
+8.10076e-09 0.0166779
+8.18894e-09 0.0166779
+8.27712e-09 0.0166779
+8.36529e-09 0.0166779
+8.45347e-09 0.0166779"/>
+    <matrix name="RINDEX__0x3308f20" coldim="2" values="1.034e-09 1.5
+4.136e-09 1.5"/>
+    <matrix name="REFLECTIVITY__0x3309180" coldim="2" values="1.12727e-09 0.08
+3.1e-09 0.08"/>
+    <matrix name="REFLECTIVITY__0x3309730" coldim="2" values="1e-09 0.9
+4e-09 0.9
+7e-09 0.9"/>
+    <matrix name="EFFICIENCY__0x33099e0" coldim="2" values="1e-09 1
+4e-09 1
+7e-09 1"/>
+    <constant name="BirksConstant_0x3322180" value="12.599993370396774"/>
+    <constant name="BirksConstant_0x334fbf0" value="3.3299982478905763"/>
+    <constant name="BirksConstant_0x335ef40" value="12.599993370396774"/>
+    <constant name="BirksConstant_0x335f9f0" value="3.3299982478905763"/>
+    <constant name="BirksConstant_0x336c3b0" value="12.599993370396774"/>
+    <position name="glass_module_0inWallECalpos" x="-12.299999999999999" y="-12.299999999999999" z="0" unit="cm"/>
+    <position name="glass_module_1inWallECalpos" x="-10.25" y="-12.299999999999999" z="0" unit="cm"/>
+    <position name="glass_module_2inWallECalpos" x="-8.1999999999999993" y="-12.299999999999999" z="0" unit="cm"/>
+    <position name="glass_module_3inWallECalpos" x="-6.1499999999999995" y="-12.299999999999999" z="0" unit="cm"/>
+    <position name="glass_module_4inWallECalpos" x="-4.0999999999999996" y="-12.299999999999999" z="0" unit="cm"/>
+    <position name="glass_module_5inWallECalpos" x="-2.0499999999999989" y="-12.299999999999999" z="0" unit="cm"/>
+    <position name="glass_module_6inWallECalpos" x="0" y="-12.299999999999999" z="0" unit="cm"/>
+    <position name="glass_module_7inWallECalpos" x="2.0499999999999989" y="-12.299999999999999" z="0" unit="cm"/>
+    <position name="glass_module_8inWallECalpos" x="4.0999999999999996" y="-12.299999999999999" z="0" unit="cm"/>
+    <position name="glass_module_9inWallECalpos" x="6.1500000000000004" y="-12.299999999999999" z="0" unit="cm"/>
+    <position name="glass_module_10inWallECalpos" x="8.2000000000000011" y="-12.299999999999999" z="0" unit="cm"/>
+    <position name="glass_module_11inWallECalpos" x="10.249999999999998" y="-12.299999999999999" z="0" unit="cm"/>
+    <position name="glass_module_12inWallECalpos" x="12.299999999999999" y="-12.299999999999999" z="0" unit="cm"/>
+    <position name="glass_module_13inWallECalpos" x="-12.299999999999999" y="-10.25" z="0" unit="cm"/>
+    <position name="glass_module_14inWallECalpos" x="-10.25" y="-10.25" z="0" unit="cm"/>
+    <position name="glass_module_15inWallECalpos" x="-8.1999999999999993" y="-10.25" z="0" unit="cm"/>
+    <position name="glass_module_16inWallECalpos" x="-6.1499999999999995" y="-10.25" z="0" unit="cm"/>
+    <position name="glass_module_17inWallECalpos" x="-4.0999999999999996" y="-10.25" z="0" unit="cm"/>
+    <position name="glass_module_18inWallECalpos" x="-2.0499999999999989" y="-10.25" z="0" unit="cm"/>
+    <position name="glass_module_19inWallECalpos" x="0" y="-10.25" z="0" unit="cm"/>
+    <position name="glass_module_20inWallECalpos" x="2.0499999999999989" y="-10.25" z="0" unit="cm"/>
+    <position name="glass_module_21inWallECalpos" x="4.0999999999999996" y="-10.25" z="0" unit="cm"/>
+    <position name="glass_module_22inWallECalpos" x="6.1500000000000004" y="-10.25" z="0" unit="cm"/>
+    <position name="glass_module_23inWallECalpos" x="8.2000000000000011" y="-10.25" z="0" unit="cm"/>
+    <position name="glass_module_24inWallECalpos" x="10.249999999999998" y="-10.25" z="0" unit="cm"/>
+    <position name="glass_module_25inWallECalpos" x="12.299999999999999" y="-10.25" z="0" unit="cm"/>
+    <position name="glass_module_26inWallECalpos" x="-12.299999999999999" y="-8.1999999999999993" z="0" unit="cm"/>
+    <position name="glass_module_27inWallECalpos" x="-10.25" y="-8.1999999999999993" z="0" unit="cm"/>
+    <position name="glass_module_28inWallECalpos" x="-8.1999999999999993" y="-8.1999999999999993" z="0" unit="cm"/>
+    <position name="glass_module_29inWallECalpos" x="-6.1499999999999995" y="-8.1999999999999993" z="0" unit="cm"/>
+    <position name="glass_module_30inWallECalpos" x="-4.0999999999999996" y="-8.1999999999999993" z="0" unit="cm"/>
+    <position name="glass_module_31inWallECalpos" x="-2.0499999999999989" y="-8.1999999999999993" z="0" unit="cm"/>
+    <position name="glass_module_32inWallECalpos" x="0" y="-8.1999999999999993" z="0" unit="cm"/>
+    <position name="glass_module_33inWallECalpos" x="2.0499999999999989" y="-8.1999999999999993" z="0" unit="cm"/>
+    <position name="glass_module_34inWallECalpos" x="4.0999999999999996" y="-8.1999999999999993" z="0" unit="cm"/>
+    <position name="glass_module_35inWallECalpos" x="6.1500000000000004" y="-8.1999999999999993" z="0" unit="cm"/>
+    <position name="glass_module_36inWallECalpos" x="8.2000000000000011" y="-8.1999999999999993" z="0" unit="cm"/>
+    <position name="glass_module_37inWallECalpos" x="10.249999999999998" y="-8.1999999999999993" z="0" unit="cm"/>
+    <position name="glass_module_38inWallECalpos" x="12.299999999999999" y="-8.1999999999999993" z="0" unit="cm"/>
+    <position name="glass_module_39inWallECalpos" x="-12.299999999999999" y="-6.1499999999999995" z="0" unit="cm"/>
+    <position name="glass_module_40inWallECalpos" x="-10.25" y="-6.1499999999999995" z="0" unit="cm"/>
+    <position name="glass_module_41inWallECalpos" x="-8.1999999999999993" y="-6.1499999999999995" z="0" unit="cm"/>
+    <position name="glass_module_42inWallECalpos" x="-6.1499999999999995" y="-6.1499999999999995" z="0" unit="cm"/>
+    <position name="glass_module_43inWallECalpos" x="-4.0999999999999996" y="-6.1499999999999995" z="0" unit="cm"/>
+    <position name="glass_module_44inWallECalpos" x="-2.0499999999999989" y="-6.1499999999999995" z="0" unit="cm"/>
+    <position name="glass_module_45inWallECalpos" x="0" y="-6.1499999999999995" z="0" unit="cm"/>
+    <position name="glass_module_46inWallECalpos" x="2.0499999999999989" y="-6.1499999999999995" z="0" unit="cm"/>
+    <position name="glass_module_47inWallECalpos" x="4.0999999999999996" y="-6.1499999999999995" z="0" unit="cm"/>
+    <position name="glass_module_48inWallECalpos" x="6.1500000000000004" y="-6.1499999999999995" z="0" unit="cm"/>
+    <position name="glass_module_49inWallECalpos" x="8.2000000000000011" y="-6.1499999999999995" z="0" unit="cm"/>
+    <position name="glass_module_50inWallECalpos" x="10.249999999999998" y="-6.1499999999999995" z="0" unit="cm"/>
+    <position name="glass_module_51inWallECalpos" x="12.299999999999999" y="-6.1499999999999995" z="0" unit="cm"/>
+    <position name="glass_module_52inWallECalpos" x="-12.299999999999999" y="-4.0999999999999996" z="0" unit="cm"/>
+    <position name="glass_module_53inWallECalpos" x="-10.25" y="-4.0999999999999996" z="0" unit="cm"/>
+    <position name="glass_module_54inWallECalpos" x="-8.1999999999999993" y="-4.0999999999999996" z="0" unit="cm"/>
+    <position name="glass_module_55inWallECalpos" x="-6.1499999999999995" y="-4.0999999999999996" z="0" unit="cm"/>
+    <position name="glass_module_56inWallECalpos" x="-4.0999999999999996" y="-4.0999999999999996" z="0" unit="cm"/>
+    <position name="glass_module_57inWallECalpos" x="-2.0499999999999989" y="-4.0999999999999996" z="0" unit="cm"/>
+    <position name="glass_module_58inWallECalpos" x="0" y="-4.0999999999999996" z="0" unit="cm"/>
+    <position name="glass_module_59inWallECalpos" x="2.0499999999999989" y="-4.0999999999999996" z="0" unit="cm"/>
+    <position name="glass_module_60inWallECalpos" x="4.0999999999999996" y="-4.0999999999999996" z="0" unit="cm"/>
+    <position name="glass_module_61inWallECalpos" x="6.1500000000000004" y="-4.0999999999999996" z="0" unit="cm"/>
+    <position name="glass_module_62inWallECalpos" x="8.2000000000000011" y="-4.0999999999999996" z="0" unit="cm"/>
+    <position name="glass_module_63inWallECalpos" x="10.249999999999998" y="-4.0999999999999996" z="0" unit="cm"/>
+    <position name="glass_module_64inWallECalpos" x="12.299999999999999" y="-4.0999999999999996" z="0" unit="cm"/>
+    <position name="glass_module_65inWallECalpos" x="-12.299999999999999" y="-2.0499999999999989" z="0" unit="cm"/>
+    <position name="glass_module_66inWallECalpos" x="-10.25" y="-2.0499999999999989" z="0" unit="cm"/>
+    <position name="glass_module_67inWallECalpos" x="-8.1999999999999993" y="-2.0499999999999989" z="0" unit="cm"/>
+    <position name="glass_module_68inWallECalpos" x="-6.1499999999999995" y="-2.0499999999999989" z="0" unit="cm"/>
+    <position name="glass_module_69inWallECalpos" x="-4.0999999999999996" y="-2.0499999999999989" z="0" unit="cm"/>
+    <position name="glass_module_70inWallECalpos" x="-2.0499999999999989" y="-2.0499999999999989" z="0" unit="cm"/>
+    <position name="glass_module_71inWallECalpos" x="0" y="-2.0499999999999989" z="0" unit="cm"/>
+    <position name="glass_module_72inWallECalpos" x="2.0499999999999989" y="-2.0499999999999989" z="0" unit="cm"/>
+    <position name="glass_module_73inWallECalpos" x="4.0999999999999996" y="-2.0499999999999989" z="0" unit="cm"/>
+    <position name="glass_module_74inWallECalpos" x="6.1500000000000004" y="-2.0499999999999989" z="0" unit="cm"/>
+    <position name="glass_module_75inWallECalpos" x="8.2000000000000011" y="-2.0499999999999989" z="0" unit="cm"/>
+    <position name="glass_module_76inWallECalpos" x="10.249999999999998" y="-2.0499999999999989" z="0" unit="cm"/>
+    <position name="glass_module_77inWallECalpos" x="12.299999999999999" y="-2.0499999999999989" z="0" unit="cm"/>
+    <position name="glass_module_78inWallECalpos" x="-12.299999999999999" y="0" z="0" unit="cm"/>
+    <position name="glass_module_79inWallECalpos" x="-10.25" y="0" z="0" unit="cm"/>
+    <position name="glass_module_80inWallECalpos" x="-8.1999999999999993" y="0" z="0" unit="cm"/>
+    <position name="glass_module_81inWallECalpos" x="-6.1499999999999995" y="0" z="0" unit="cm"/>
+    <position name="glass_module_82inWallECalpos" x="-4.0999999999999996" y="0" z="0" unit="cm"/>
+    <position name="glass_module_83inWallECalpos" x="-2.0499999999999989" y="0" z="0" unit="cm"/>
+    <position name="glass_module_84inWallECalpos" x="0" y="0" z="0" unit="cm"/>
+    <position name="glass_module_85inWallECalpos" x="2.0499999999999989" y="0" z="0" unit="cm"/>
+    <position name="glass_module_86inWallECalpos" x="4.0999999999999996" y="0" z="0" unit="cm"/>
+    <position name="glass_module_87inWallECalpos" x="6.1500000000000004" y="0" z="0" unit="cm"/>
+    <position name="glass_module_88inWallECalpos" x="8.2000000000000011" y="0" z="0" unit="cm"/>
+    <position name="glass_module_89inWallECalpos" x="10.249999999999998" y="0" z="0" unit="cm"/>
+    <position name="glass_module_90inWallECalpos" x="12.299999999999999" y="0" z="0" unit="cm"/>
+    <position name="glass_module_91inWallECalpos" x="-12.299999999999999" y="2.0499999999999989" z="0" unit="cm"/>
+    <position name="glass_module_92inWallECalpos" x="-10.25" y="2.0499999999999989" z="0" unit="cm"/>
+    <position name="glass_module_93inWallECalpos" x="-8.1999999999999993" y="2.0499999999999989" z="0" unit="cm"/>
+    <position name="glass_module_94inWallECalpos" x="-6.1499999999999995" y="2.0499999999999989" z="0" unit="cm"/>
+    <position name="glass_module_95inWallECalpos" x="-4.0999999999999996" y="2.0499999999999989" z="0" unit="cm"/>
+    <position name="glass_module_96inWallECalpos" x="-2.0499999999999989" y="2.0499999999999989" z="0" unit="cm"/>
+    <position name="glass_module_97inWallECalpos" x="0" y="2.0499999999999989" z="0" unit="cm"/>
+    <position name="glass_module_98inWallECalpos" x="2.0499999999999989" y="2.0499999999999989" z="0" unit="cm"/>
+    <position name="glass_module_99inWallECalpos" x="4.0999999999999996" y="2.0499999999999989" z="0" unit="cm"/>
+    <position name="glass_module_100inWallECalpos" x="6.1500000000000004" y="2.0499999999999989" z="0" unit="cm"/>
+    <position name="glass_module_101inWallECalpos" x="8.2000000000000011" y="2.0499999999999989" z="0" unit="cm"/>
+    <position name="glass_module_102inWallECalpos" x="10.249999999999998" y="2.0499999999999989" z="0" unit="cm"/>
+    <position name="glass_module_103inWallECalpos" x="12.299999999999999" y="2.0499999999999989" z="0" unit="cm"/>
+    <position name="glass_module_104inWallECalpos" x="-12.299999999999999" y="4.0999999999999996" z="0" unit="cm"/>
+    <position name="glass_module_105inWallECalpos" x="-10.25" y="4.0999999999999996" z="0" unit="cm"/>
+    <position name="glass_module_106inWallECalpos" x="-8.1999999999999993" y="4.0999999999999996" z="0" unit="cm"/>
+    <position name="glass_module_107inWallECalpos" x="-6.1499999999999995" y="4.0999999999999996" z="0" unit="cm"/>
+    <position name="glass_module_108inWallECalpos" x="-4.0999999999999996" y="4.0999999999999996" z="0" unit="cm"/>
+    <position name="glass_module_109inWallECalpos" x="-2.0499999999999989" y="4.0999999999999996" z="0" unit="cm"/>
+    <position name="glass_module_110inWallECalpos" x="0" y="4.0999999999999996" z="0" unit="cm"/>
+    <position name="glass_module_111inWallECalpos" x="2.0499999999999989" y="4.0999999999999996" z="0" unit="cm"/>
+    <position name="glass_module_112inWallECalpos" x="4.0999999999999996" y="4.0999999999999996" z="0" unit="cm"/>
+    <position name="glass_module_113inWallECalpos" x="6.1500000000000004" y="4.0999999999999996" z="0" unit="cm"/>
+    <position name="glass_module_114inWallECalpos" x="8.2000000000000011" y="4.0999999999999996" z="0" unit="cm"/>
+    <position name="glass_module_115inWallECalpos" x="10.249999999999998" y="4.0999999999999996" z="0" unit="cm"/>
+    <position name="glass_module_116inWallECalpos" x="12.299999999999999" y="4.0999999999999996" z="0" unit="cm"/>
+    <position name="glass_module_117inWallECalpos" x="-12.299999999999999" y="6.1500000000000004" z="0" unit="cm"/>
+    <position name="glass_module_118inWallECalpos" x="-10.25" y="6.1500000000000004" z="0" unit="cm"/>
+    <position name="glass_module_119inWallECalpos" x="-8.1999999999999993" y="6.1500000000000004" z="0" unit="cm"/>
+    <position name="glass_module_120inWallECalpos" x="-6.1499999999999995" y="6.1500000000000004" z="0" unit="cm"/>
+    <position name="glass_module_121inWallECalpos" x="-4.0999999999999996" y="6.1500000000000004" z="0" unit="cm"/>
+    <position name="glass_module_122inWallECalpos" x="-2.0499999999999989" y="6.1500000000000004" z="0" unit="cm"/>
+    <position name="glass_module_123inWallECalpos" x="0" y="6.1500000000000004" z="0" unit="cm"/>
+    <position name="glass_module_124inWallECalpos" x="2.0499999999999989" y="6.1500000000000004" z="0" unit="cm"/>
+    <position name="glass_module_125inWallECalpos" x="4.0999999999999996" y="6.1500000000000004" z="0" unit="cm"/>
+    <position name="glass_module_126inWallECalpos" x="6.1500000000000004" y="6.1500000000000004" z="0" unit="cm"/>
+    <position name="glass_module_127inWallECalpos" x="8.2000000000000011" y="6.1500000000000004" z="0" unit="cm"/>
+    <position name="glass_module_128inWallECalpos" x="10.249999999999998" y="6.1500000000000004" z="0" unit="cm"/>
+    <position name="glass_module_129inWallECalpos" x="12.299999999999999" y="6.1500000000000004" z="0" unit="cm"/>
+    <position name="glass_module_130inWallECalpos" x="-12.299999999999999" y="8.2000000000000011" z="0" unit="cm"/>
+    <position name="glass_module_131inWallECalpos" x="-10.25" y="8.2000000000000011" z="0" unit="cm"/>
+    <position name="glass_module_132inWallECalpos" x="-8.1999999999999993" y="8.2000000000000011" z="0" unit="cm"/>
+    <position name="glass_module_133inWallECalpos" x="-6.1499999999999995" y="8.2000000000000011" z="0" unit="cm"/>
+    <position name="glass_module_134inWallECalpos" x="-4.0999999999999996" y="8.2000000000000011" z="0" unit="cm"/>
+    <position name="glass_module_135inWallECalpos" x="-2.0499999999999989" y="8.2000000000000011" z="0" unit="cm"/>
+    <position name="glass_module_136inWallECalpos" x="0" y="8.2000000000000011" z="0" unit="cm"/>
+    <position name="glass_module_137inWallECalpos" x="2.0499999999999989" y="8.2000000000000011" z="0" unit="cm"/>
+    <position name="glass_module_138inWallECalpos" x="4.0999999999999996" y="8.2000000000000011" z="0" unit="cm"/>
+    <position name="glass_module_139inWallECalpos" x="6.1500000000000004" y="8.2000000000000011" z="0" unit="cm"/>
+    <position name="glass_module_140inWallECalpos" x="8.2000000000000011" y="8.2000000000000011" z="0" unit="cm"/>
+    <position name="glass_module_141inWallECalpos" x="10.249999999999998" y="8.2000000000000011" z="0" unit="cm"/>
+    <position name="glass_module_142inWallECalpos" x="12.299999999999999" y="8.2000000000000011" z="0" unit="cm"/>
+    <position name="glass_module_143inWallECalpos" x="-12.299999999999999" y="10.249999999999998" z="0" unit="cm"/>
+    <position name="glass_module_144inWallECalpos" x="-10.25" y="10.249999999999998" z="0" unit="cm"/>
+    <position name="glass_module_145inWallECalpos" x="-8.1999999999999993" y="10.249999999999998" z="0" unit="cm"/>
+    <position name="glass_module_146inWallECalpos" x="-6.1499999999999995" y="10.249999999999998" z="0" unit="cm"/>
+    <position name="glass_module_147inWallECalpos" x="-4.0999999999999996" y="10.249999999999998" z="0" unit="cm"/>
+    <position name="glass_module_148inWallECalpos" x="-2.0499999999999989" y="10.249999999999998" z="0" unit="cm"/>
+    <position name="glass_module_149inWallECalpos" x="0" y="10.249999999999998" z="0" unit="cm"/>
+    <position name="glass_module_150inWallECalpos" x="2.0499999999999989" y="10.249999999999998" z="0" unit="cm"/>
+    <position name="glass_module_151inWallECalpos" x="4.0999999999999996" y="10.249999999999998" z="0" unit="cm"/>
+    <position name="glass_module_152inWallECalpos" x="6.1500000000000004" y="10.249999999999998" z="0" unit="cm"/>
+    <position name="glass_module_153inWallECalpos" x="8.2000000000000011" y="10.249999999999998" z="0" unit="cm"/>
+    <position name="glass_module_154inWallECalpos" x="10.249999999999998" y="10.249999999999998" z="0" unit="cm"/>
+    <position name="glass_module_155inWallECalpos" x="12.299999999999999" y="10.249999999999998" z="0" unit="cm"/>
+    <position name="glass_module_156inWallECalpos" x="-12.299999999999999" y="12.299999999999999" z="0" unit="cm"/>
+    <position name="glass_module_157inWallECalpos" x="-10.25" y="12.299999999999999" z="0" unit="cm"/>
+    <position name="glass_module_158inWallECalpos" x="-8.1999999999999993" y="12.299999999999999" z="0" unit="cm"/>
+    <position name="glass_module_159inWallECalpos" x="-6.1499999999999995" y="12.299999999999999" z="0" unit="cm"/>
+    <position name="glass_module_160inWallECalpos" x="-4.0999999999999996" y="12.299999999999999" z="0" unit="cm"/>
+    <position name="glass_module_161inWallECalpos" x="-2.0499999999999989" y="12.299999999999999" z="0" unit="cm"/>
+    <position name="glass_module_162inWallECalpos" x="0" y="12.299999999999999" z="0" unit="cm"/>
+    <position name="glass_module_163inWallECalpos" x="2.0499999999999989" y="12.299999999999999" z="0" unit="cm"/>
+    <position name="glass_module_164inWallECalpos" x="4.0999999999999996" y="12.299999999999999" z="0" unit="cm"/>
+    <position name="glass_module_165inWallECalpos" x="6.1500000000000004" y="12.299999999999999" z="0" unit="cm"/>
+    <position name="glass_module_166inWallECalpos" x="8.2000000000000011" y="12.299999999999999" z="0" unit="cm"/>
+    <position name="glass_module_167inWallECalpos" x="10.249999999999998" y="12.299999999999999" z="0" unit="cm"/>
+    <position name="glass_module_168inWallECalpos" x="12.299999999999999" y="12.299999999999999" z="0" unit="cm"/>
+    <position name="WallECal_0inworld_volumepos" x="0" y="0" z="20" unit="cm"/>
+  </define>
+  <materials>
+    <material name="dummy" Z="0">
+      <D unit="g/cm3" value="0"/>
+      <atom unit="g/mole" value="0"/>
+    </material>
+    <element name="N_elm" formula="N" Z="7">
+      <atom unit="g/mole" value="14.0068"/>
+    </element>
+    <element name="O_elm" formula="O" Z="8">
+      <atom unit="g/mole" value="15.9994"/>
+    </element>
+    <element name="Ar_elm" formula="Ar" Z="18">
+      <atom unit="g/mole" value="39.947699999999998"/>
+    </element>
+    <material name="Air">
+      <D unit="g/cm3" value="0.0011999999999999999"/>
+      <fraction n="0.012000000104308128" ref="Ar_elm"/>
+      <fraction n="0.75400000810623169" ref="N_elm"/>
+      <fraction n="0.23399999737739563" ref="O_elm"/>
+    </material>
+    <element name="Ba_elm" formula="Ba" Z="56">
+      <atom unit="g/mole" value="137.327"/>
+    </element>
+    <element name="Gd_elm" formula="Gd" Z="64">
+      <atom unit="g/mole" value="157.25200000000001"/>
+    </element>
+    <element name="Si_elm" formula="Si" Z="14">
+      <atom unit="g/mole" value="28.0854"/>
+    </element>
+    <material name="SciGlass">
+      <D unit="g/cm3" value="4.2199999999999998"/>
+      <fraction n="0.38749998807907104" ref="Ba_elm"/>
+      <fraction n="0.21459999680519104" ref="Gd_elm"/>
+      <fraction n="0.26100000739097595" ref="O_elm"/>
+      <fraction n="0.13689999282360077" ref="Si_elm"/>
+      <property name="BirksConstant" ref="BirksConstant_0x334fbf0"/>
+    </material>
+  </materials>
+  <solids>
+    <box name="world_volume_shape_0x33e7120" x="6000" y="6000" z="20000" lunit="cm"/>
+    <box name="glass_box_shape_0x30632c0" x="2" y="2" z="20" lunit="cm"/>
+  </solids>
+  <structure>
+    <volume name="glass_module">
+      <materialref ref="SciGlass"/>
+      <solidref ref="glass_box_shape_0x30632c0"/>
+    </volume>
+    <assembly name="WallECal">
+      <physvol name="glass_module_0" copynumber="0">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_0inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_1" copynumber="1">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_1inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_2" copynumber="2">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_2inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_3" copynumber="3">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_3inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_4" copynumber="4">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_4inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_5" copynumber="5">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_5inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_6" copynumber="6">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_6inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_7" copynumber="7">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_7inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_8" copynumber="8">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_8inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_9" copynumber="9">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_9inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_10" copynumber="10">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_10inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_11" copynumber="11">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_11inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_12" copynumber="12">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_12inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_13" copynumber="13">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_13inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_14" copynumber="14">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_14inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_15" copynumber="15">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_15inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_16" copynumber="16">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_16inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_17" copynumber="17">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_17inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_18" copynumber="18">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_18inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_19" copynumber="19">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_19inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_20" copynumber="20">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_20inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_21" copynumber="21">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_21inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_22" copynumber="22">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_22inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_23" copynumber="23">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_23inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_24" copynumber="24">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_24inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_25" copynumber="25">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_25inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_26" copynumber="26">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_26inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_27" copynumber="27">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_27inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_28" copynumber="28">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_28inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_29" copynumber="29">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_29inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_30" copynumber="30">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_30inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_31" copynumber="31">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_31inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_32" copynumber="32">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_32inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_33" copynumber="33">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_33inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_34" copynumber="34">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_34inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_35" copynumber="35">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_35inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_36" copynumber="36">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_36inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_37" copynumber="37">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_37inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_38" copynumber="38">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_38inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_39" copynumber="39">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_39inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_40" copynumber="40">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_40inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_41" copynumber="41">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_41inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_42" copynumber="42">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_42inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_43" copynumber="43">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_43inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_44" copynumber="44">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_44inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_45" copynumber="45">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_45inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_46" copynumber="46">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_46inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_47" copynumber="47">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_47inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_48" copynumber="48">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_48inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_49" copynumber="49">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_49inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_50" copynumber="50">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_50inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_51" copynumber="51">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_51inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_52" copynumber="52">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_52inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_53" copynumber="53">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_53inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_54" copynumber="54">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_54inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_55" copynumber="55">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_55inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_56" copynumber="56">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_56inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_57" copynumber="57">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_57inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_58" copynumber="58">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_58inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_59" copynumber="59">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_59inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_60" copynumber="60">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_60inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_61" copynumber="61">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_61inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_62" copynumber="62">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_62inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_63" copynumber="63">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_63inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_64" copynumber="64">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_64inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_65" copynumber="65">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_65inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_66" copynumber="66">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_66inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_67" copynumber="67">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_67inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_68" copynumber="68">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_68inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_69" copynumber="69">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_69inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_70" copynumber="70">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_70inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_71" copynumber="71">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_71inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_72" copynumber="72">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_72inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_73" copynumber="73">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_73inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_74" copynumber="74">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_74inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_75" copynumber="75">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_75inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_76" copynumber="76">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_76inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_77" copynumber="77">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_77inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_78" copynumber="78">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_78inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_79" copynumber="79">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_79inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_80" copynumber="80">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_80inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_81" copynumber="81">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_81inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_82" copynumber="82">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_82inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_83" copynumber="83">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_83inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_84" copynumber="84">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_84inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_85" copynumber="85">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_85inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_86" copynumber="86">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_86inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_87" copynumber="87">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_87inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_88" copynumber="88">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_88inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_89" copynumber="89">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_89inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_90" copynumber="90">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_90inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_91" copynumber="91">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_91inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_92" copynumber="92">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_92inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_93" copynumber="93">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_93inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_94" copynumber="94">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_94inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_95" copynumber="95">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_95inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_96" copynumber="96">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_96inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_97" copynumber="97">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_97inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_98" copynumber="98">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_98inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_99" copynumber="99">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_99inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_100" copynumber="100">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_100inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_101" copynumber="101">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_101inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_102" copynumber="102">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_102inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_103" copynumber="103">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_103inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_104" copynumber="104">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_104inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_105" copynumber="105">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_105inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_106" copynumber="106">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_106inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_107" copynumber="107">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_107inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_108" copynumber="108">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_108inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_109" copynumber="109">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_109inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_110" copynumber="110">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_110inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_111" copynumber="111">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_111inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_112" copynumber="112">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_112inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_113" copynumber="113">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_113inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_114" copynumber="114">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_114inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_115" copynumber="115">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_115inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_116" copynumber="116">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_116inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_117" copynumber="117">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_117inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_118" copynumber="118">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_118inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_119" copynumber="119">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_119inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_120" copynumber="120">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_120inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_121" copynumber="121">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_121inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_122" copynumber="122">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_122inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_123" copynumber="123">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_123inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_124" copynumber="124">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_124inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_125" copynumber="125">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_125inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_126" copynumber="126">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_126inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_127" copynumber="127">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_127inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_128" copynumber="128">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_128inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_129" copynumber="129">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_129inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_130" copynumber="130">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_130inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_131" copynumber="131">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_131inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_132" copynumber="132">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_132inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_133" copynumber="133">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_133inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_134" copynumber="134">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_134inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_135" copynumber="135">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_135inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_136" copynumber="136">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_136inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_137" copynumber="137">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_137inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_138" copynumber="138">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_138inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_139" copynumber="139">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_139inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_140" copynumber="140">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_140inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_141" copynumber="141">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_141inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_142" copynumber="142">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_142inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_143" copynumber="143">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_143inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_144" copynumber="144">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_144inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_145" copynumber="145">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_145inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_146" copynumber="146">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_146inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_147" copynumber="147">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_147inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_148" copynumber="148">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_148inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_149" copynumber="149">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_149inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_150" copynumber="150">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_150inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_151" copynumber="151">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_151inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_152" copynumber="152">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_152inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_153" copynumber="153">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_153inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_154" copynumber="154">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_154inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_155" copynumber="155">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_155inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_156" copynumber="156">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_156inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_157" copynumber="157">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_157inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_158" copynumber="158">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_158inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_159" copynumber="159">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_159inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_160" copynumber="160">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_160inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_161" copynumber="161">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_161inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_162" copynumber="162">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_162inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_163" copynumber="163">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_163inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_164" copynumber="164">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_164inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_165" copynumber="165">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_165inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_166" copynumber="166">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_166inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_167" copynumber="167">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_167inWallECalpos"/>
+      </physvol>
+      <physvol name="glass_module_168" copynumber="168">
+        <volumeref ref="glass_module"/>
+        <positionref ref="glass_module_168inWallECalpos"/>
+      </physvol>
+    </assembly>
+    <volume name="world_volume">
+      <materialref ref="Air"/>
+      <solidref ref="world_volume_shape_0x33e7120"/>
+      <physvol name="WallECal_0" copynumber="0">
+        <volumeref ref="WallECal"/>
+        <positionref ref="WallECal_0inworld_volumepos"/>
+      </physvol>
+    </volume>
+  </structure>
+  <setup name="default" version="1.0">
+    <world ref="world_volume"/>
+  </setup>
+</gdml>

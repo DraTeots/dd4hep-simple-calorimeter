@@ -1,0 +1,22 @@
+# Verbosity control
+/control/verbose 0
+/tracking/verbose 0
+/event/verbose 0
+/gps/verbose 2
+
+# General Particle Source setup
+/gps/direction 0 0 1
+/gps/particle pi-
+/gps/pos/type Plane
+/gps/pos/shape Circle
+/gps/pos/centre 0 0 0 cm
+/gps/pos/radius 1 cm
+/gps/ene/type Lin
+/gps/ene/min 0.2 GeV
+/gps/ene/max 30 GeV
+/gps/ene/gradient 0
+/gps/ene/intercept 1
+
+# Run simulation
+/run/beamOn 1000
+

@@ -1,0 +1,86 @@
+# General Particle Source v.10.7
+# https://geant4-userdoc.web.cern.ch/UsersGuides/ForApplicationDeveloper/BackupVersions/V10.7/html/GettingStarted/generalParticleSource.html
+
+# Specify true for simultaneous generation of multiple vertices, one from each specified source. 
+# False [default] generates a single vertex, choosing one source randomly.
+/gps/source/multiplevertex true
+
+# Violet 
+/gps/source/intensity 1
+/gps/particle opticalphoton
+#/gps/direction 0 0 1
+/gps/direction 0 1 1
+/gps/ang/type iso
+/gps/pos/type Point
+/gps/pos/centre 0 15 10 mm
+/gps/ene/type Mono
+/gps/ene/mono 3 eV
+
+# Blue
+/gps/source/add 1
+/gps/particle opticalphoton
+#/gps/direction 0 0 1
+/gps/direction 0 1 1
+/gps/ang/type iso
+/gps/pos/type Point
+/gps/pos/centre 0 10 10 mm
+/gps/ene/type Mono
+/gps/ene/mono 2.655 eV
+
+# Cyan
+/gps/source/add 1
+/gps/particle opticalphoton
+#/gps/direction 0 0 1
+/gps/direction 0 1 1
+/gps/ang/type iso
+/gps/pos/type Point
+/gps/pos/centre 0 5 10 mm
+/gps/ene/type Mono
+/gps/ene/mono 2.52 eV
+
+# Green
+/gps/source/add 1
+/gps/particle opticalphoton
+#/gps/direction 0 0 1
+/gps/direction 0 1 1
+/gps/ang/type iso
+/gps/pos/type Point
+/gps/pos/centre 0 0 10 mm
+/gps/ene/type Mono
+/gps/ene/mono 2.335 eV
+
+# Yellow
+/gps/source/add 1
+/gps/particle opticalphoton
+#/gps/direction 0 0 1
+/gps/direction 0 1 1
+/gps/ang/type iso
+/gps/pos/type Point
+/gps/pos/centre 0 -5 10 mm
+/gps/ene/type Mono
+/gps/ene/mono 2.15 eV
+
+# Orange
+/gps/source/add 1
+/gps/particle opticalphoton
+#/gps/direction 0 0 1
+/gps/direction 0 1 1
+/gps/ang/type iso
+/gps/pos/type Point
+/gps/pos/centre 0 -10 10 mm
+/gps/ene/type Mono
+/gps/ene/mono 2.04 eV
+
+# Red
+/gps/source/add 1
+/gps/particle opticalphoton
+#/gps/direction 0 0 1
+/gps/direction 0 1 1
+/gps/ang/type iso
+/gps/pos/type Point
+/gps/pos/centre 0 -15 10 mm
+/gps/ene/type Mono
+/gps/ene/mono 1.815 eV
+
+# List
+/gps/source/list

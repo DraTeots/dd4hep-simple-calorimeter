@@ -1,0 +1,17 @@
+# General Particle Source v.10.7
+# https://geant4-userdoc.web.cern.ch/UsersGuides/ForApplicationDeveloper/BackupVersions/V10.7/html/GettingStarted/generalParticleSource.html
+
+# General Commands
+# https://geant4-userdoc.web.cern.ch/UsersGuides/ForApplicationDeveloper/BackupVersions/V10.7/html/GettingStarted/generalParticleSource.html#g4particlegun-equivalent-commands
+/gps/particle mu-
+/gps/direction 0. -1. 0.
+
+# Position and Struction
+# https://geant4-userdoc.web.cern.ch/UsersGuides/ForApplicationDeveloper/BackupVersions/V10.7/html/GettingStarted/generalParticleSource.html#source-position-and-structure
+/gps/pos/type Point
+/gps/pos/centre 0. 60. 10. mm
+
+# Energy Spectrum
+# https://geant4-userdoc.web.cern.ch/UsersGuides/ForApplicationDeveloper/BackupVersions/V10.7/html/GettingStarted/generalParticleSource.html#energy-spectra
+/gps/ene/type Mono
+/gps/ene/mono 3 GeV

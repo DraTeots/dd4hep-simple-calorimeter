@@ -1,0 +1,70 @@
+#        _                 _ _                _   _             
+# __   _(_)___ _   _  __ _| (_)_   _ ______ _| |_(_) ___  _ __  
+# \ \ / / / __| | | |/ _` | | | | | |_  / _` | __| |/ _ \| '_ \ 
+#  \ V /| \__ \ |_| | (_| | | | |_| |/ / (_| | |_| | (_) | | | |
+#   \_/ |_|___/\__,_|\__,_|_|_|\__,_/___\__,_|\__|_|\___/|_| |_|
+
+# https://geant4.web.cern.ch/sites/geant4.web.cern.ch/files/geant4/collaboration/workshops/users2002/talks/README.built_in_commands.txt
+
+# Disable auto refresh and quieten vis messages whilst scene and trajectories are established:
+/vis/viewer/set/autoRefresh false
+/vis/verbose all
+
+# Create an OpenGL view
+# /vis/open OGL
+/vis/open OGLIX 700x700
+
+# Set background color
+/vis/viewer/set/background white
+
+# Draw geometry
+/vis/drawVolume
+/vis/scene/add/trajectories smooth
+
+# Decorations
+/vis/geometry/set/visibility World          0 false
+/vis/geometry/set/visibility mother_logical 0 false
+/vis/geometry/set/visibility single_logical 0 false
+
+/vis/geometry/set/colour crystal_logical    0 0 1 1 0.2
+/vis/geometry/set/colour wrap_logical       0 0 0 0 0.2
+
+/vis/geometry/set/colour pmtCover_logical   0 0.1 0.5 0.05 0.15
+/vis/geometry/set/colour pmt_logical        0 1 1 1 0.5
+/vis/geometry/set/colour pmtWindow_logical  0 0.4 0.2 0.9 0.2
+/vis/geometry/set/colour pmtVacuum_logical  0 1 1 1 1
+/vis/geometry/set/colour pmtCathode_logical 0 0.95 0.15 0.5 1
+
+/vis/geometry/set/colour mppcCase_logical   0 0.1 0.5 0.05 0.15
+/vis/geometry/set/colour mppcWindow_logical 0 0.4 0.2 0.9 0.2
+/vis/geometry/set/colour mppc_logical       0 0.95 0.5 0.7 1
+
+# Axes, scale, etc.
+# /vis/scene/add/axes
+
+# Set surface drawing style
+/vis/viewer/set/style surface
+
+# /vis/viewer/set/auxiliaryEdge true
+# /vis/viewer/set/lineSegmentsPerCircle 100
+
+# Re-establish auto refreshing and verbosity
+/vis/viewer/set/autoRefresh true
+/vis/verbose warnings
+
+# Camera pivot point
+/myvis/centerViewer
+# /vis/viewer/set/targetPoint 0 0 0 mm
+
+# Move lights with camera
+/vis/viewer/set/lightsMove with-camera
+
+# Direction from target to camera
+# Tip: also changes lightpoint direction if lights are set to move with camera
+#      so no need to call "/vis/viewer/set/lightsVector" it screwes things up
+/vis/viewer/set/viewpointVector -1 1 -1
+
+# Zoom level
+# /vis/viewer/zoomTo 1
+
+

@@ -1,0 +1,11 @@
+/vis/scene/add/trajectories rich smooth
+
+/vis/modeling/trajectories/create/drawByAttribute
+# /vis/modeling/trajectories/drawByAttribute-0/verbose true
+/vis/modeling/trajectories/drawByAttribute-0/setAttribute CPN
+/vis/modeling/trajectories/drawByAttribute-0/addValue scint_key Scintillation
+# /vis/modeling/trajectories/drawByAttribute-0/scint_key/setLineColour magenta
+/vis/modeling/trajectories/drawByAttribute-0/scint_key/setLineColourRGBA 1 0 1 0.1
+/vis/modeling/trajectories/drawByAttribute-0/addValue chere_key Cerenkov
+# /vis/modeling/trajectories/drawByAttribute-0/chere_key/setLineColour cyan
+/vis/modeling/trajectories/drawByAttribute-0/chere_key/setLineColourRGBA 0 1 1 0.1

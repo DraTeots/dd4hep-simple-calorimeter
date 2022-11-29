@@ -30,3 +30,13 @@
 *.exe
 *.out
 *.app
+
+.idea/
+
+cmake-build-debug/
+
+dd4hep/.devcontainer/
+
+fieldmaps/
+
+simulation/calibrations/

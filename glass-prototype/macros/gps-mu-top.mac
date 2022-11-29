@@ -1,0 +1,31 @@
+# Cosmic muon implementation
+
+# General Particle Source v.10.7
+# https://geant4-userdoc.web.cern.ch/UsersGuides/ForApplicationDeveloper/BackupVersions/V10.7/html/GettingStarted/generalParticleSource.html
+
+# General Commands
+# https://geant4-userdoc.web.cern.ch/UsersGuides/ForApplicationDeveloper/BackupVersions/V10.7/html/GettingStarted/generalParticleSource.html#g4particlegun-equivalent-commands
+/gps/particle mu-
+# /gps/direction 0. -1. 0.
+
+# Position and Struction
+# https://geant4-userdoc.web.cern.ch/UsersGuides/ForApplicationDeveloper/BackupVersions/V10.7/html/GettingStarted/generalParticleSource.html#source-position-and-structure
+/gps/pos/type Point
+/gps/pos/centre 0. 50. 10. mm
+
+# Energy Spectrum
+# https://geant4-userdoc.web.cern.ch/UsersGuides/ForApplicationDeveloper/BackupVersions/V10.7/html/GettingStarted/generalParticleSource.html#energy-spectra
+/gps/ene/type Pow
+/gps/ene/min 2. MeV
+/gps/ene/max 10. MeV
+/gps/ene/alpha -2.
+
+/gps/pos/centre 0 15 10 mm
+#/gps/direction 0 1 0
+/gps/ang/type cos
+
+# Degree between Z axis and particle (default 0...180)
+/gps/ang/maxtheta 10 deg
+
+# Turn XY plane down
+/gps/ang/rot2 0 0 -1

@@ -1,0 +1,22 @@
+# Co 60 implementation
+
+# First Source
+# ------------
+/gps/source/intensity 1
+/gps/ene/type Mono
+/gps/ene/mono 1.33 MeV
+/gps/particle gamma
+/gps/pos/type Point
+/gps/pos/centre 0 15 100 mm
+/gps/direction 0 1 0
+
+
+# Second Source
+# -------------
+/gps/source/add 1
+/gps/ene/type Mono
+/gps/ene/mono 1.17 MeV
+/gps/particle gamma
+/gps/pos/type Point
+/gps/pos/centre 0 15 100 mm
+/gps/direction 0 1 0
