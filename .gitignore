@@ -40,3 +40,7 @@ dd4hep/.devcontainer/
 fieldmaps/
 
 simulation/calibrations/
+
+analysis/__pycache__/
+
+*.feather
