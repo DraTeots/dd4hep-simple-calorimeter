@@ -44,3 +44,11 @@ simulation/calibrations/
 analysis/__pycache__/
 
 *.feather
+
+analysis/trained_models/
+
+build/.cmake/
+
+build/
+
+simulation/__pycache__/

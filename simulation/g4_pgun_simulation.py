@@ -14,6 +14,7 @@ class G4SimConfig:
         self.file_date = datetime.datetime.now().strftime('%Y-%m-%d')
         self.output_dir = ""
         self.crystal_type = "SciGlass-4-1-L"
+        self.crystal_size = 400
 
 
     @property
@@ -37,12 +38,12 @@ class G4SimConfig:
             /physics/selectList FTFP_BERT
 
             # Crystal size along X, Y and Z axis
-            /detector/setCrystalSize 20 20 200 mm
+            /detector/setCrystalSize 20 20 {self.crystal_size} mm
 
             # Crystal material - currently supported values are:
             # PWO-CRYTUR, PWO-SICCAS, PWO-BOGO, PWO-SICCAS-YANG
             # CSGlass-0-T, SciGlass-4-1-L, SciGlass-4-1-T, SciGlass-2-2-T, SciGlass-2-1-L, SciGlass-2-1-T, SciGlass-1-1-T 
-            /detector/setCrystalMaterial SciGlass-4-1-L
+            /detector/setCrystalMaterial {self.crystal_type}
 
             # Number of crystals in the assembly along X and Y axis
             /detector/setCrystalNumberX 13

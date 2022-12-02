@@ -25,11 +25,13 @@
     </comment>
 
     <constant name="GlassModule_width" value="20.00*mm"/>
-    <constant name="GlassModule_length" value="200.00*mm"/>
+    <constant name="GlassModule_length" value="400.00*mm"/>
     <constant name="GlassModule_wrap" value="0.50*mm"/>
     <constant name="GlassModule_z0" value="0.0*cm"/>
-    <constant name="UseGlass" value="0"/>
-<!--    <constant name="GlassMaterial" value="PbWO4"/>-->
+    <constant name="GlassModule_material" value="SciGlass" type="string"/>
+
+
+<!--    <constant name="GlassModule_material" value="PbWO4"/>-->
 
     <constant name="EcalEndcapN_thickness" value="GlassModule_length"/>
     <constant name="EcalEndcapN_z0" value="-EcalEndcapN_zmin - EcalEndcapN_thickness/2"/>

@@ -13,7 +13,7 @@
 /physics/selectList FTFP_BERT
 
 # Crystal size along X, Y and Z axis
-/detector/setCrystalSize 20 20 200 mm
+/detector/setCrystalSize 20 20 400 mm
 
 # Crystal material - currently supported values are:
 # PWO-CRYTUR, PWO-SICCAS, PWO-BOGO, PWO-SICCAS-YANG

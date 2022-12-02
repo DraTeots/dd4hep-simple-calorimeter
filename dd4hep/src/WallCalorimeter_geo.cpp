@@ -34,8 +34,9 @@ static Ref_t create_detector(Detector &desc, xml::Handle_t handle, SensitiveDete
     DetElement det(detName, detID);
     sens.setType("calorimeter");
 
-    //auto glass_material = desc.material("SciGlass");
-    auto glass_material = desc.material("PbWO4");
+    std::string material_name = desc.constantAsString("GlassModule_material");
+    auto glass_material = desc.material(material_name);
+    //auto glass_material = desc.material("PbWO4");
 //  auto crystal_material = desc.material("PbWO4");
 //  auto air_material     = desc.material("Air");
 //
@@ -145,6 +146,7 @@ static Ref_t create_detector(Detector &desc, xml::Handle_t handle, SensitiveDete
     fmt::print("topTowerPos = {}\n" , topTowerPos);
     fmt::print("Glass_Width = {}\n" , Glass_Width);
     fmt::print("Glass_Gap = {}\n" , Glass_Gap);
+    fmt::print("Glass_material = {}\n", material_name);
     fmt::print("Glass_Width + Glass_Gap = {}\n\n\n" , Glass_Width + Glass_Gap);
 
 
