@@ -116,7 +116,7 @@ static Ref_t create_detector(Detector &desc, xml::Handle_t handle, SensitiveDete
     //const int towersInRow = std::ceil((diameter + Glass_Gap) / (Glass_Width + Glass_Gap));
 
 
-    const int towersInRow = 15;
+    const int towersInRow = 21;
 
     // Is it odd or even number of towersInRow
     double leftTowerPos, topTowerPos;
@@ -145,6 +145,7 @@ static Ref_t create_detector(Detector &desc, xml::Handle_t handle, SensitiveDete
     fmt::print("towersInHalfRow = {}\n" , towersInHalfRow);
     fmt::print("topTowerPos = {}\n" , topTowerPos);
     fmt::print("Glass_Width = {}\n" , Glass_Width);
+    fmt::print("Glass_Length = {}\n" , Glass_thickness);
     fmt::print("Glass_Gap = {}\n" , Glass_Gap);
     fmt::print("Glass_material = {}\n", material_name);
     fmt::print("Glass_Width + Glass_Gap = {}\n\n\n" , Glass_Width + Glass_Gap);
