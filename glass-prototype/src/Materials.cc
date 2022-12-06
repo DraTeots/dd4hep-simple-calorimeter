@@ -483,6 +483,7 @@ Materials::Materials() : fMaterialsList{}
 
     PWO_C->SetMaterialPropertiesTable(mpt);
   }
+  PWO_C->GetIonisation()->SetBirksConstant(0.0333*mm/MeV);
   printMaterialProperties(PWO_C);
   generateEmissionMacro(PWO_C);
   fMaterialsList.push_back(PWO_C);
@@ -662,8 +663,9 @@ Materials::Materials() : fMaterialsList{}
   fMaterialsList.push_back(SciGlass41T);
   saveMaterial(SciGlass41T);
 
-  // █▀ █▀▀ █ █▀▀ █░░ ▄▀█ █▀ █▀ ▄▄ █░█ ▄▄ ▄█ ▄▄ █░░
-  // ▄█ █▄▄ █ █▄█ █▄▄ █▀█ ▄█ ▄█ ░░ ▀▀█ ░░ ░█ ░░ █▄▄
+  // ==========================================================
+  // >>>>>>>>>>>>>>>> SciGlass-4-1-L <<<<<<<<<<<<<<<<<<<<<<<<<<
+  // ==========================================================
 
   G4Material* SciGlass41L = getBaseMaterial("SciGlass-4-1-L", BaseMaterialType::SciGlass);
   {
@@ -681,10 +683,38 @@ Materials::Materials() : fMaterialsList{}
 
     SciGlass41L->SetMaterialPropertiesTable(mpt);
   }
+  
   printMaterialProperties(SciGlass41L);
   fMaterialsList.push_back(SciGlass41L);
   saveMaterial(SciGlass41L);
   generateEmissionMacro(SciGlass41L);
+
+  // ==========================================================
+  // >>>>>>>>>>>>>>>> SciGlass-4-1-LB <<<<<<<<<<<<<<<<<<<<<<<<<
+  // This is SciGlass-4-1-L with Birks constants on
+  // ==========================================================
+
+  G4Material* SciGlass41LB = getBaseMaterial("SciGlass-4-1-LB", BaseMaterialType::SciGlass);
+  {
+  	G4MaterialPropertiesTable* mpt = getBaseMPT(BaseMaterialType::SciGlass);
+
+    // Transmittance SciGlass-4-1 (longtitudinal), provided by T.Horn
+  	std::vector<G4double> transmittance = {200, 0, 210, 0.069765, 220, 0.027811, 230, 0.026263, 240, 0.036594, 250, 0.072978, 260, 0.10794, 270, 0.143685, 280, 0.176654, 290, 0.216414, 300, 0.252862, 310, 0.259973, 320, 0.264657, 330, 0.277921, 340, 0.338508, 350, 0.4099, 360, 0.499389, 370, 0.584733, 380, 0.639023, 390, 0.582725, 400, 0.510784, 410, 3.063759, 420, 11.140062, 430, 19.133428, 440, 24.645589, 450, 28.378947, 460, 32.328752, 470, 36.409245, 480, 40.067563, 490, 42.772399, 500, 44.835243, 510, 46.154412, 520, 46.812182, 530, 46.834435, 540, 46.634598, 550, 45.803039, 560, 44.500032, 570, 42.071389, 580, 38.863329, 590, 35.786495, 600, 33.530721, 610, 31.090229, 620, 28.659624, 630, 26.21967, 640, 24.106397, 650, 22.340703, 660, 20.634379, 670, 19.133298, 680, 17.885559, 690, 16.465658, 700, 15.091078, 710, 13.830955, 720, 12.645989, 730, 11.491253, 740, 10.274713, 750, 9.231806, 760, 8.400117, 770, 7.549239, 780, 6.801887, 790, 6.067987, 800, 5.404571};
+  	G4MaterialPropertyVector* transmittanceMPV = nmToMPV(transmittance);
+    G4double transmittanceDistance = 20*cm;
+
+    // Absorption length
+    G4MaterialPropertyVector* refractiveIndexMPV = mpt->GetProperty("RINDEX");
+    G4MaterialPropertyVector* absLengthMPV = calcAbsorptionLength(mpt, refractiveIndexMPV, transmittanceMPV, transmittanceDistance);
+    mpt->AddProperty("ABSLENGTH", absLengthMPV, true);
+
+    SciGlass41LB->SetMaterialPropertiesTable(mpt);
+  }
+  SciGlass41LB->GetIonisation()->SetBirksConstant(0.0333*mm/MeV);
+  printMaterialProperties(SciGlass41LB);
+  fMaterialsList.push_back(SciGlass41LB);
+  saveMaterial(SciGlass41LB);
+  generateEmissionMacro(SciGlass41LB);
 
   // █▀▀ █▀ █▀▀ █░░ ▄▀█ █▀ █▀ ▄▄ █▀█ ▄▄ ▀█▀
   // █▄▄ ▄█ █▄█ █▄▄ █▀█ ▄█ ▄█ ░░ █▄█ ░░ ░█░
