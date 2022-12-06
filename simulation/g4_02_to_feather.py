@@ -54,6 +54,16 @@ files_2022_12_02 = [
         "2022-12-02_cherepaha_sciglass_2x2x40/SciGlass-4-1-L-13x13-20x20x400mm-10GeV-20000events-pi--40mm-R1450.root",
 ]
 
+files_birks_2022_12_03 = [
+    
+        "output/SciGlass-4-1-LB-13x13-20x20x400mm-0.7GeV-20000events-e--40mm-R1450.root",
+        "output/SciGlass-4-1-LB-13x13-20x20x400mm-0.7GeV-20000events-pi--40mm-R1450.root",
+        "output/SciGlass-4-1-LB-13x13-20x20x400mm-1GeV-20000events-e--40mm-R1450.root",
+        "output/SciGlass-4-1-LB-13x13-20x20x400mm-1GeV-20000events-pi--40mm-R1450.root",
+    
+]
+
+
 def data_to_pandas(file_set):
     import re
     import uproot
@@ -94,7 +104,11 @@ if __name__ == "__main__":
     #df = data_to_pandas(files_set_dec_01_2022_pbwo4)    
     #df.to_feather(f"{data_base_dir}/2022-12-01_cherepaha_PWO-CRYTUR_13x13_20x20x200mm_1-6GeV_e-pi-_10kev-each.feather")
 
-    df = data_to_pandas(files_2022_12_02)    
-    df.to_feather(f"{data_base_dir}/2022-11-29_cherepaha_SciGlass-4-1-L_13x13_20x20x400mm_0.5-10GeV_e-pi-_20kev-each.feather")
+    # df = data_to_pandas(files_2022_12_02)    
+    # df.to_feather(f"{data_base_dir}/2022-11-29_cherepaha_SciGlass-4-1-L_13x13_20x20x400mm_0.5-10GeV_e-pi-_20kev-each.feather")
+
+    df = data_to_pandas(files_birks_2022_12_03)    
+    df.to_feather(f"{data_base_dir}/2022-11-29_cherepaha_SciGlass-4-1-LB_13x13_20x20x400mm_0.5-10GeV_e-pi-_20kev-each.feather")
+    
     print(df.head())
     

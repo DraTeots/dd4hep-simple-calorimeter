@@ -19,8 +19,16 @@ class SimConfig:
         self.output_dir = ""
 
     @property
+    def output_base_file_name(self):
+        return f'{self.output_dir}/{self.file_date}_pgun_SciGlass-2x2x40_{self.particle}_{self.detector_config}_e{self.e_min}-{self.e_max}GeV_center_{self.multiplicity}prt_{self.events_num}evt'
+
+    @property
     def output_file_name(self):
-        return f'{self.output_dir}/{self.file_date}_pgun_SciGlass-2x2x40_{self.particle}_{self.detector_config}_e{self.e_min}-{self.e_max}GeV_center_{self.multiplicity}prt_{self.events_num}evt.edm4hep.root'
+        return f'{self.output_base_file_name}.edm4hep.root'
+
+    @property
+    def output_gdml_file_name(self):
+        return f'{self.output_base_file_name}.geometry.gdml'
 
     @property
     def sim_command_list(self):
@@ -42,6 +50,11 @@ class SimConfig:
             f'--outputFile={self.output_file_name}',
         ]
         return sim_command
+
+    @property
+    def gen_geo_command(self):
+        """Command to generate geometry"""
+        return f"geoConverter -compact2gdml -input $DETECTOR_PATH/{self.detector_config}.xml -output {self.output_gdml_file_name}"
 
     @property
     def sim_command(self):
@@ -82,6 +95,16 @@ def run_simulation(config: SimConfig, upload=False):
 
     if upload:
         upload_to_s3(config.output_file_name)
+
+def gen_geometry(config: SimConfig):
+    """Generates geometry in GDML file"""
+    
+    # gen! gen! gen!
+    subprocess.run(config.gen_geo_command, shell=True, check=True)
+
+    # reporting end
+    
+    print(f"Saved geometry ast: {config.output_gdml_file_name}: ")
 
 
 if __name__ == "__main__":

@@ -54,7 +54,7 @@ def load_as_pandas(root_file_name, entry_start=0, entry_stop=None):
     df = pd.DataFrame({"true_e": true_e,
                        "sum_e": sum_e,
                        #"ct_sum_e": ct_sum_e,
-                       "p": ak.flatten( px * px + py * py + pz * pz).to_numpy(),
+                       "p": ak.flatten(np.sqrt( px * px + py * py + pz * pz)).to_numpy(),
                        "m": ak.flatten(masses).to_numpy()})
     return df
 

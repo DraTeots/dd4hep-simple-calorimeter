@@ -19,7 +19,7 @@ class G4SimConfig:
 
     @property
     def macro_file_name(self):
-        file_name = f'{self.file_date}_g4_pgun_{self.crystal_type}_{self.particle}_e{self.energy}-GeV_{self.multiplicity}prt_{self.events_num}evt.mac'
+        file_name = f'{self.file_date}_g4_pgun00pz_birks_{self.crystal_type}_{self.particle}_e{self.energy}-GeV_{self.multiplicity}prt_{self.events_num}evt.mac'
         if self.output_dir:
             file_name = os.path.join(self.output_dir, file_name)
         return file_name
@@ -46,8 +46,8 @@ class G4SimConfig:
             /detector/setCrystalMaterial {self.crystal_type}
 
             # Number of crystals in the assembly along X and Y axis
-            /detector/setCrystalNumberX 13
-            /detector/setCrystalNumberY 13
+            /detector/setCrystalNumberX 21
+            /detector/setCrystalNumberY 21
 
             # Wrap material. "C10H8O4" is vm2000. "G4_TEFLON" is teflon. "NONE" is no wrap material
             /detector/setWrapMaterial C10H8O4
