@@ -1,4 +1,4 @@
-data_base_dir = "/mnt/work/data/epi"
+data_base_dir = "/mnt/work/data/epi/21x21"
 files_set_nov_29_2022 = [
     "cherepaha_nov-29-2022/SciGlass-4-1-L-13x13-20x20x200mm-1GeV-10000events-e--40mm-R1450.root",
     "cherepaha_nov-29-2022/SciGlass-4-1-L-13x13-20x20x200mm-1GeV-10000events-pi--40mm-R1450.root",
@@ -54,6 +54,72 @@ files_2022_12_02 = [
         "2022-12-02_cherepaha_sciglass_2x2x40/SciGlass-4-1-L-13x13-20x20x400mm-10GeV-20000events-pi--40mm-R1450.root",
 ]
 
+
+files_2022_12_05_sciglass = [
+        "2022-12-05_geant4/SciGlass-4-1-LB-21x21-20x20x400mm-0.7GeV-20000events-e--40mm-R1450.root",
+        "2022-12-05_geant4/SciGlass-4-1-LB-21x21-20x20x400mm-0.7GeV-20000events-pi--40mm-R1450.root",
+         "2022-12-05_geant4/SciGlass-4-1-LB-21x21-20x20x400mm-1GeV-20000events-e--40mm-R1450.root",
+        "2022-12-05_geant4/SciGlass-4-1-LB-21x21-20x20x400mm-1GeV-20000events-pi--40mm-R1450.root",
+        "2022-12-05_geant4/SciGlass-4-1-LB-21x21-20x20x400mm-2GeV-20000events-e--40mm-R1450.root",
+        "2022-12-05_geant4/SciGlass-4-1-LB-21x21-20x20x400mm-2GeV-20000events-pi--40mm-R1450.root",
+        "2022-12-05_geant4/SciGlass-4-1-LB-21x21-20x20x400mm-3GeV-20000events-e--40mm-R1450.root",
+        "2022-12-05_geant4/SciGlass-4-1-LB-21x21-20x20x400mm-3GeV-20000events-pi--40mm-R1450.root",
+        "2022-12-05_geant4/SciGlass-4-1-LB-21x21-20x20x400mm-4GeV-20000events-e--40mm-R1450.root",
+        "2022-12-05_geant4/SciGlass-4-1-LB-21x21-20x20x400mm-4GeV-20000events-pi--40mm-R1450.root",
+        "2022-12-05_geant4/SciGlass-4-1-LB-21x21-20x20x400mm-6GeV-20000events-e--40mm-R1450.root",
+        "2022-12-05_geant4/SciGlass-4-1-LB-21x21-20x20x400mm-6GeV-20000events-pi--40mm-R1450.root",
+        "2022-12-05_geant4/SciGlass-4-1-LB-21x21-20x20x400mm-8GeV-20000events-e--40mm-R1450.root",
+        "2022-12-05_geant4/SciGlass-4-1-LB-21x21-20x20x400mm-8GeV-20000events-pi--40mm-R1450.root",
+        "2022-12-05_geant4/SciGlass-4-1-LB-21x21-20x20x400mm-10GeV-20000events-e--40mm-R1450.root",
+        "2022-12-05_geant4/SciGlass-4-1-LB-21x21-20x20x400mm-10GeV-20000events-pi--40mm-R1450.root",
+        "2022-12-05_geant4/SciGlass-4-1-LB-21x21-20x20x400mm-12GeV-20000events-e--40mm-R1450.root",
+        "2022-12-05_geant4/SciGlass-4-1-LB-21x21-20x20x400mm-12GeV-20000events-pi--40mm-R1450.root",
+        "2022-12-05_geant4/SciGlass-4-1-LB-21x21-20x20x400mm-14GeV-20000events-e--40mm-R1450.root",
+        "2022-12-05_geant4/SciGlass-4-1-LB-21x21-20x20x400mm-14GeV-20000events-pi--40mm-R1450.root",
+        "2022-12-05_geant4/SciGlass-4-1-LB-21x21-20x20x400mm-16GeV-20000events-e--40mm-R1450.root",
+        "2022-12-05_geant4/SciGlass-4-1-LB-21x21-20x20x400mm-16GeV-20000events-pi--40mm-R1450.root",
+        "2022-12-05_geant4/SciGlass-4-1-LB-21x21-20x20x400mm-18GeV-20000events-e--40mm-R1450.root",
+        "2022-12-05_geant4/SciGlass-4-1-LB-21x21-20x20x400mm-18GeV-20000events-pi--40mm-R1450.root",
+
+]
+files_2022_12_05_pwo = [
+
+        "2022-12-05_geant4/PWO-CRYTUR-21x21-20x20x200mm-0.7GeV-20000events-e--40mm-R1450.root",
+        "2022-12-05_geant4/PWO-CRYTUR-21x21-20x20x200mm-0.7GeV-20000events-pi--40mm-R1450.root",        
+        "2022-12-05_geant4/PWO-CRYTUR-21x21-20x20x200mm-1GeV-20000events-e--40mm-R1450.root",
+        "2022-12-05_geant4/PWO-CRYTUR-21x21-20x20x200mm-1GeV-20000events-pi--40mm-R1450.root",
+       
+        "2022-12-05_geant4/PWO-CRYTUR-21x21-20x20x200mm-2GeV-20000events-e--40mm-R1450.root",
+        "2022-12-05_geant4/PWO-CRYTUR-21x21-20x20x200mm-2GeV-20000events-pi--40mm-R1450.root",
+        
+        "2022-12-05_geant4/PWO-CRYTUR-21x21-20x20x200mm-3GeV-20000events-e--40mm-R1450.root",
+        "2022-12-05_geant4/PWO-CRYTUR-21x21-20x20x200mm-3GeV-20000events-pi--40mm-R1450.root",
+        
+        "2022-12-05_geant4/PWO-CRYTUR-21x21-20x20x200mm-4GeV-20000events-e--40mm-R1450.root",
+        "2022-12-05_geant4/PWO-CRYTUR-21x21-20x20x200mm-4GeV-20000events-pi--40mm-R1450.root",
+        
+        "2022-12-05_geant4/PWO-CRYTUR-21x21-20x20x200mm-6GeV-20000events-e--40mm-R1450.root",
+        "2022-12-05_geant4/PWO-CRYTUR-21x21-20x20x200mm-6GeV-20000events-pi--40mm-R1450.root",
+        
+        "2022-12-05_geant4/PWO-CRYTUR-21x21-20x20x200mm-8GeV-20000events-e--40mm-R1450.root",
+        "2022-12-05_geant4/PWO-CRYTUR-21x21-20x20x200mm-8GeV-20000events-pi--40mm-R1450.root",
+        
+        "2022-12-05_geant4/PWO-CRYTUR-21x21-20x20x200mm-10GeV-20000events-e--40mm-R1450.root",
+        "2022-12-05_geant4/PWO-CRYTUR-21x21-20x20x200mm-10GeV-20000events-pi--40mm-R1450.root",
+        
+        "2022-12-05_geant4/PWO-CRYTUR-21x21-20x20x200mm-12GeV-20000events-e--40mm-R1450.root",
+        "2022-12-05_geant4/PWO-CRYTUR-21x21-20x20x200mm-12GeV-20000events-pi--40mm-R1450.root",
+        
+        "2022-12-05_geant4/PWO-CRYTUR-21x21-20x20x200mm-14GeV-20000events-e--40mm-R1450.root",
+        "2022-12-05_geant4/PWO-CRYTUR-21x21-20x20x200mm-14GeV-20000events-pi--40mm-R1450.root",
+       
+        "2022-12-05_geant4/PWO-CRYTUR-21x21-20x20x200mm-16GeV-20000events-e--40mm-R1450.root",
+        "2022-12-05_geant4/PWO-CRYTUR-21x21-20x20x200mm-16GeV-20000events-pi--40mm-R1450.root",
+        
+        "2022-12-05_geant4/PWO-CRYTUR-21x21-20x20x200mm-18GeV-20000events-e--40mm-R1450.root",
+        "2022-12-05_geant4/PWO-CRYTUR-21x21-20x20x200mm-18GeV-20000events-pi--40mm-R1450.root",
+]
+
 files_birks_2022_12_03 = [
     
         "output/SciGlass-4-1-LB-13x13-20x20x400mm-0.7GeV-20000events-e--40mm-R1450.root",
@@ -107,8 +173,11 @@ if __name__ == "__main__":
     # df = data_to_pandas(files_2022_12_02)    
     # df.to_feather(f"{data_base_dir}/2022-11-29_cherepaha_SciGlass-4-1-L_13x13_20x20x400mm_0.5-10GeV_e-pi-_20kev-each.feather")
 
-    df = data_to_pandas(files_birks_2022_12_03)    
-    df.to_feather(f"{data_base_dir}/2022-11-29_cherepaha_SciGlass-4-1-LB_13x13_20x20x400mm_0.5-10GeV_e-pi-_20kev-each.feather")
+    df = data_to_pandas(files_2022_12_05_sciglass)    
+    df.to_feather(f"{data_base_dir}/2022_12_05_cherepaha_SciGlass-4-1-LB_21x21_20x20x400mm_0.7-18GeV_e-pi-_20kev-each.feather")
+
+    df = data_to_pandas(files_2022_12_05_pwo)    
+    df.to_feather(f"{data_base_dir}/2022_12_05_cherepaha_PbWO4_21x21_20x20x200mm_0.7-18GeV_e-pi-_20kev-each.feather")
     
     print(df.head())
     

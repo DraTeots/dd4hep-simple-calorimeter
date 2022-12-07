@@ -142,7 +142,8 @@ def sumulate_uniform_energy():
 
 
 def simulate_fixed_energy():    
-    for energy_gev in [0.7, 1, 2, 3, 4, 6, 8, 10, 12, 14, 16, 18]:
+    #for energy_gev in [0.7, 1, 2, 3, 4, 6, 8, 10, 12, 14, 16, 18]:
+    for energy_gev in [12, 14, 16, 18]:
         for glass_type in ["PbWO4", "SciGlass"]:
             # 1 electron
             cfg = SimConfig()
